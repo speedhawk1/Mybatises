@@ -1,0 +1,11 @@
+SELECT * FROM mysql.user;
+
+CREATE DATABASE IF NOT EXISTS dbm;
+DROP TABLE IF EXISTS dbm.users;
+CREATE TABLE dbm.users(
+  id INT AUTO_INCREMENT PRIMARY KEY COMMENT 'id',
+  username VARCHAR(255) NOT NULL COMMENT 'username',
+  password VARCHAR(255) NOT NULL COMMENT 'password'
+);
+
+SELECT * FROM dbm.users;
